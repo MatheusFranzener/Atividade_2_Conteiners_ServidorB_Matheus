@@ -1,7 +1,7 @@
 let listaProdutos = [];
 
 async function getProdutos(){
-
+    return listaProdutos;
 }
 
 async function cadastrarProdutos(dados){
