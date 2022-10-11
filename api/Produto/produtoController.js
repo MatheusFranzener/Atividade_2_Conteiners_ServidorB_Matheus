@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
+
 const produtoHandler = require("./produtoHandler");
 
 router.get("/", async (req, res) => {
