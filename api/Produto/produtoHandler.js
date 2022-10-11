@@ -9,7 +9,7 @@ async function getProdutos() {
 async function cadastrarProdutos(dados) {
     let verificacao = true;
 
-    const res = await fetch("http://localhost:3000/api/usuario/login", {
+    const res = await fetch("http://destino:3000/api/usuario/login", {
         method: 'POST',
         body: JSON.stringify(dados),
         headers: {
@@ -43,22 +43,27 @@ module.exports = {
     apagarProdutos
 }
 
+// let verificacao = true;
+
 // const res = await fetch("http://localhost:3000/api/usuario/login", {
 //     method: 'POST',
 //     body: JSON.stringify(dados),
 //     headers: {
 //         'Content-Type': 'application/json'
 //     }
+// }).then(function (res) {
+//     if (res.status == 500) {
+//         verificacao = false;
+//     } else {
+//         listaProdutos.push(dados);
+//     }
 // });
 
-// let usuarios = await res.json();
-
-// if (usuarios.status == 400) {
+// if (verificacao == false) {
 //     return {
 //         error: "001",
 //         message: "Dados de Login inválidos!"
 //     }
 // } else {
-//     listaProdutos.push(dados);
 //     return dados;
 // }
